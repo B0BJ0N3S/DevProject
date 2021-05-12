@@ -6,6 +6,10 @@
     color: inherit;
 }
 
+html {
+    font-size: 16px;
+}
+
 @font-face {
     font-family: 'KDA font';
     src: url('../fonts/KDA.ttf');
@@ -20,6 +24,28 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+p {
+    color: #410759;
+}
+
+body {
+    background-image: url("../images/Horizons.jpeg");
+    font-family: 'indie flower';
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
 header {
     display: flex;
     flex-wrap: nowrap;
@@ -98,14 +124,15 @@ header a:visited {
     }
 } */
 
-body {
-    background-image: url("../images/Horizons.jpeg");
-    font-family: 'indie flower';
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
+
+
+
+
+
+
+
+/* AKALI SECTION */
 #AkaliSection {
     position: relative;
     top: 100px;
@@ -139,13 +166,31 @@ body {
     color: #7b2d9c;
 }
 
+
+
+
+
+
+
+
+
+
+/* IMG OPTIONS */
+.img-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
 .img-option {
     position: relative;
     padding: 0;
     border: none;
     margin: 15px 6px;
     display: inline-block;
-    width: 250px;
+    min-width: 250px;
+    max-width: 450px;
     height: auto;
 }
 
@@ -186,14 +231,21 @@ body {
     transition: .5s ease;
 }
 
-#Seraphine-text {
-    font-size: 30px;
+.img-option #Seraphine {
+    font-size: 35px;
 }
 
-p {
-    color: #410759;
-}
 
+
+
+
+
+
+
+
+
+
+/* FOOTER */
 footer {
     background-color: rgba(224, 190, 232, 0.85);
     display: block;
